@@ -62,7 +62,7 @@ int main( int argc, char** argv ) {
 
     cv::imshow( "Log_Polar", logpolar_frame );
 
-    writer << logpolar_frame;
+    writer.write(logpolar_frame);
 
     char c = cv::waitKey(10);
 
